@@ -33,7 +33,7 @@
 import RNBluePrint from 'react-native-blue-print';
 
 //inside async fn-
-await RNBluePrint.print("hello world");
+await RNBluePrint.printText("hello world");
 
 ```
   

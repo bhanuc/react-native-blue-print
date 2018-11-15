@@ -1,10 +1,12 @@
 
 package io.bhanu.reactnative;
 
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothAdapter;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.Promise;
 
 public class RNBluePrintModule extends ReactContextBaseJavaModule {
 
@@ -43,7 +45,7 @@ public class RNBluePrintModule extends ReactContextBaseJavaModule {
           promise.resolve(true);
         }
 
-        @Overide
+        @Override
         public void onFailed() {
           promise.reject("BluetoothPrinter Conection failed");
         }
