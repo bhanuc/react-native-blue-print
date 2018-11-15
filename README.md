@@ -1,6 +1,10 @@
 
 # react-native-blue-print
 
+Easily print receipts from Bluetooth thermal printers. 
+
+Note: This module is currently written for android only due to business requirements. PRs for IOS are welcomed.
+
 ## Getting started
 
 `$ npm install react-native-blue-print --save`
@@ -25,6 +29,10 @@
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
       compile project(':react-native-blue-print')
+  	```
+3. Add the following permission in  `android/app/src/main/AndroidManifest.xml`:
+  	```
+        <uses-permission android:name="android.permission.BLUETOOTH" />
   	```
 
 

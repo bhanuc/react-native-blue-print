@@ -28,7 +28,7 @@ public class RNBluePrintModule extends ReactContextBaseJavaModule {
    * printText() Returns true if the print is successful
    */
   @ReactMethod
-  public void printText(String message, final Promise promise) {
+  public void printText(final String message, final Promise promise) {
     try {
       BluetoothAdapter btAdapter = BluetoothAdapter.getDefaultAdapter();
       BluetoothDevice mBtDevice = btAdapter.getBondedDevices().iterator().next(); // Get first paired device

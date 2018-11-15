@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-blue-print",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Easy Thermal Printing from Android.",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "Bhanu Pratap Chaudhary",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
   }
